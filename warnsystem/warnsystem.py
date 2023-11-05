@@ -31,7 +31,7 @@ log = logging.getLogger("red.laggron.warnsystem")
 _ = Translator("WarnSystem", __file__)
 
 EMBED_MODLOG = lambda x: _("A member got a level {} warning.").format(x)
-EMBED_USER = lambda x: _("The moderation team set you a level {} warning.").format(x)
+EMBED_USER = lambda x: _("The moderation team set you a level {} warning. You may dispute a warning by contacting the Lead Moderator.").format(x)
 
 
 class CompositeMetaClass(type(commands.Cog), type(ABC)):
